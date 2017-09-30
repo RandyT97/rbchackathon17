@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'whatwg-fetch';
-import './App.css';
+import './piceChart.css';
 import { Chart } from 'react-google-charts';
 
 class App extends Component {

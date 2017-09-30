@@ -1,3 +1,15 @@
-.header{
+#header {
   color: blue;
+}
+
+#body {
+  color: red;
+}
+
+#testing {
+  color: yellow;
+}
+
+#entireBody {
+  color: green:
 }

@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './pieChart';
 import registerServiceWorker from './registerServiceWorker';
 import 'whatwg-fetch';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<pieChart />, document.getElementById('root'));
 registerServiceWorker();

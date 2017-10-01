@@ -1,15 +1,28 @@
-#header {
-  background-color: blue;
+.simple-linear {
+  background: bull;
+  width: 100px;
+  height: 100px;
 }
 
-#body {
-  background-color: red;
+#rightColumn {
+  height: 100%;
+  width: 15%;
+  background-color: #d6e4f9;
+  float: right;
 }
 
-#testing {
-  background-color: yellow;
+#leftColumn {
+
+  background-color: #d6e4f9;
+  height: 100%;
+  width: 15%;
+  float: left;
 }
 
-#entireBody {
-  background-color: green;
+#head {
+float: center;
+width: 100%;
+height: 30%;
+display: block;
+background-color: blue;
 }

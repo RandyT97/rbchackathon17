@@ -34,4 +34,15 @@ The value of socialized banking explores banking in a different aspect of our li
 
 The problem with associating social media with personal banking will always be the users' perceptions on the safety of their information. However, this can be avoided by defaulting the social media sharing of banking milestones to off. A well-informed page would further reassure users of their own safety. 
  
- 
+	Dependencies
+
+    "bootstrap": "^3.3.7",
+    "firebase": "^4.4.0",
+    "firebase-admin": "^5.3.0",
+    "firebase-nodejs": "^1.0.1-1.1",
+    "latest-version": "^3.1.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-bootstrap": "^0.31.3",
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.14"

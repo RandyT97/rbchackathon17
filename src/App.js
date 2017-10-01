@@ -49,7 +49,7 @@ const loginPage = (
         </ReactBootstrap.Form>
 
         <ReactBootstrap.ButtonToolbar>
-            <ReactBootstrap.Button>Blank</ReactBootstrap.Button>
+            <ReactBootstrap.Button href="/achievements/achievements.jsx">Blank</ReactBootstrap.Button>
         </ReactBootstrap.ButtonToolbar>
     </div>
 );

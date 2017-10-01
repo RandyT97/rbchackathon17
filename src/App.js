@@ -9,10 +9,44 @@ import * as FireBase from 'firebase';
 
 const loginPage = (
     <div>
+        {/*TODO: Firebase authentication implementation and Control label*/}
         <ReactBootstrap.PageHeader>Login Page</ReactBootstrap.PageHeader>
+        <ReactBootstrap.Form horizontal>
+            <ReactBootstrap.FormGroup controlId="formHorizontalEmail">
+                {/*<ReactBootstrap.Col componentClass={ControlLabel} sm={2}>*/}
+                    {/*Email*/}
+                {/*</ReactBootstrap.Col>*/}
+                <ReactBootstrap.Col sm={10}>
+                    <ReactBootstrap.FormControl type="email" placeholder="Email" />
+                </ReactBootstrap.Col>
+            </ReactBootstrap.FormGroup>
+
+            <ReactBootstrap.FormGroup controlId="formHorizontalPassword">
+                {/*<ReactBootstrap.Col componentClass={ControlLabel} sm={2}>*/}
+                    {/*/!*Password*!/*/}
+                {/*</ReactBootstrap.Col>*/}
+                <ReactBootstrap.Col sm={10}>
+                    <ReactBootstrap.FormControl type="password" placeholder="Password" />
+                </ReactBootstrap.Col>
+            </ReactBootstrap.FormGroup>
+
+            <ReactBootstrap.FormGroup>
+                <ReactBootstrap.Col smOffset={0} sm={10}>
+                    <ReactBootstrap.Checkbox><p>Remember me</p></ReactBootstrap.Checkbox>
+                </ReactBootstrap.Col>
+            </ReactBootstrap.FormGroup>
+
+            <ReactBootstrap.FormGroup>
+                <ReactBootstrap.Col smOffset={0} sm={10}>
+                    <ReactBootstrap.Button type="submit">
+                        Sign in
+                    </ReactBootstrap.Button>
+                </ReactBootstrap.Col>
+            </ReactBootstrap.FormGroup>
+        </ReactBootstrap.Form>
+
         <ReactBootstrap.ButtonToolbar>
-            <ReactBootstrap.Button bsStyle="primary">Default button</ReactBootstrap.Button>
-            <ReactBootstrap.Button>Default button</ReactBootstrap.Button>
+            <ReactBootstrap.Button>Blank</ReactBootstrap.Button>
         </ReactBootstrap.ButtonToolbar>
     </div>
 );
@@ -22,13 +56,19 @@ class App extends Component {
         super(props);
 
         this.state = {
-            email:"",
-            password:""
+            email:" ",
+            password:" "
+
 
         };
     }
+    handleChange(e) {
+        this.setState({ value: e.target.value});
+    }
+
+    //This function should be using firebase auth
     validateForm() {
-        return this.state.email.length > 0;
+        return this.state.email.length > 0 && this.state.password.length > 0;
     }
     render() {
         return (

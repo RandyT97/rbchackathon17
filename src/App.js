@@ -33,7 +33,7 @@ const loginPage = (
             <ReactBootstrap.FormGroup>
                 <ReactBootstrap.Col smOffset={0} sm={10}>
                     <ReactBootstrap.Checkbox><p>Remember me</p></ReactBootstrap.Checkbox>
-                </ReactBootstrap.Col>--
+                </ReactBootstrap.Col>
             </ReactBootstrap.FormGroup>
 
             <ReactBootstrap.FormGroup>
@@ -76,8 +76,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <h1></h1>
-                <h2>{loginPage}</h2>
+                <h1>{loginPage}</h1>
             </div>
         )
     }

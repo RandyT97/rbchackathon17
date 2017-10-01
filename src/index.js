@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './pieChart';
+import pieChart from './pieChart';
 import registerServiceWorker from './registerServiceWorker';
 import 'whatwg-fetch';
 

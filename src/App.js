@@ -4,9 +4,12 @@
 import React, {Component} from 'react';
 import './App.css';
 import * as ReactBootstrap from 'react-bootstrap';
+import * as FireBase from 'firebase';
 
-const buttonsInstance = (
+
+const loginPage = (
     <div>
+        <ReactBootstrap.PageHeader>Login Page</ReactBootstrap.PageHeader>
         <ReactBootstrap.ButtonToolbar>
             <ReactBootstrap.Button bsStyle="primary">Default button</ReactBootstrap.Button>
             <ReactBootstrap.Button>Default button</ReactBootstrap.Button>
@@ -19,14 +22,19 @@ class App extends Component {
         super(props);
 
         this.state = {
+            email:"",
+            password:""
 
         };
+    }
+    validateForm() {
+        return this.state.email.length > 0;
     }
     render() {
         return (
             <div>
-                <h1>Test</h1>
-                <h2>{buttonsInstance}</h2>
+                <h1></h1>
+                <h2>{loginPage}</h2>
             </div>
         )
     }

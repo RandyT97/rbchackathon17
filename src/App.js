@@ -33,13 +33,16 @@ const loginPage = (
             <ReactBootstrap.FormGroup>
                 <ReactBootstrap.Col smOffset={0} sm={10}>
                     <ReactBootstrap.Checkbox><p>Remember me</p></ReactBootstrap.Checkbox>
-                </ReactBootstrap.Col>
+                </ReactBootstrap.Col>--
             </ReactBootstrap.FormGroup>
 
             <ReactBootstrap.FormGroup>
                 <ReactBootstrap.Col smOffset={0} sm={10}>
                     <ReactBootstrap.Button type="submit">
                         Sign in
+                    </ReactBootstrap.Button>
+                    <ReactBootstrap.Button type="submit">
+                        Make Account
                     </ReactBootstrap.Button>
                 </ReactBootstrap.Col>
             </ReactBootstrap.FormGroup>

@@ -1,4 +1,4 @@
-#Royal Bank of Canada Hackathon Fall'17 UCF
+#RBC Hackathon Fall'17 UCF
 
 ##**Socialized Banking** 
  
